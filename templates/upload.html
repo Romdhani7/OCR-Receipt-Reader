@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  <!-- Setting character encoding -->
+    <title>Receipt Scanner</title>  <!-- Page title -->
+    <link rel="stylesheet" href="/static/styles.css">  <!-- Linking to external CSS file -->
+</head>
+<body>
+    <div class="container">  <!-- Container for form elements -->
+        <h1>Upload Receipt Image</h1>  <!-- Page heading -->
+        <!-- Form for uploading image file -->
+        <form action="/upload/" enctype="multipart/form-data" method="post">
+            <div class="form-group"> <!-- Added form-group for styling -->
+                <input type="file" name="file" accept="image/*" required>  <!-- Input for image file -->
+            </div>
+            <button type="submit">Upload</button>  <!-- Submit button for form -->
+        </form>
+    </div>
+</body>
+</html>

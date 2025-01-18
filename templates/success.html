@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Receipt Upload Success</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Receipt Uploaded Successfully</h1>
+        <div class="result-container">
+            <div class="text-section">
+                <p><strong>Extracted Text:</strong></p>
+                <pre>{{ extracted_text }}</pre>
+                <p><strong>Filename:</strong> {{ filename }}</p>
+                <p><strong>Total Amount:</strong> <span class="total">{{ total_amount }}</span></p>
+                <a href="/">Upload another receipt</a>
+            </div>
+            <div class="image-section"> <!-- Added image section -->
+                <img src="/static/iiii.jpg" alt="Design Image"> <!-- Updated image path -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
