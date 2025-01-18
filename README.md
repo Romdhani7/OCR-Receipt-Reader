@@ -24,23 +24,23 @@ This is especially useful for automating receipt management, such as tracking ex
    git clone https://github.com/yourusername/ocr-receipt-reader.git
    cd ocr-receipt-reader
 **********************************************************************************   
-##Running the Project
+## Running the Project
 Run the app using the following command:
 **********************************************************************************
 uvicorn main:app --reload
 **********************************************************************************
 Once the server is running, open your browser and navigate to http://127.0.0.1:8000/ to start uploading receipt images.
 
-##How It Works
+## How It Works
 Receipt Image Upload: Users upload a receipt image using a simple form in the web interface.
 OCR Text Extraction: The uploaded image is processed by EasyOCR, extracting any readable text from the receipt.
 Total Amount Detection: A regex pattern searches the extracted text for total amounts (like "Total", "Grand Total").
 Result Display: The extracted text and total amount (if found) are displayed on a result page.
 
-##Example of Input and Output
+## Example of Input and Output
 After uploading a receipt image, the application will extract and display all the text from the receipt. If a total amount is found, it will be highlighted on the result page.
 
-##Example Output:
+## Example Output:
 The app will display the following on the result page:
 **********************************************************************************
 Extracted Text:
